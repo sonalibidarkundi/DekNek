@@ -1,6 +1,9 @@
 // Configure your deployed backend API URL here before deploying to Netlify
 // Example: 'https://your-flask-app.onrender.com'
+// Set this when deploying to Vercel if you want a fixed backend origin.
+// With Vercel rewrites (vercel.json) we can use same-origin relative paths, so keep this empty.
 const DEPLOYED_API_URL = '';
+
 
 const API_BASE_URL = DEPLOYED_API_URL || (
     window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1')

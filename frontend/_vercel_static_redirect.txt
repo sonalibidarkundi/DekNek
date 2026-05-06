@@ -1,0 +1,1 @@
+Static files are served from /frontend via Vercel build; ensure you set vercel.json/public settings if needed.
