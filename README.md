@@ -175,8 +175,12 @@ Create a `.env` file in the root directory to customize configuration:
 ```env
 SECRET_KEY=your-secret-key-here
 JWT_SECRET_KEY=your-jwt-secret-key-here
+# For Vercel production you should use a persistent DB (e.g. Postgres) rather than SQLite.
+# DATABASE_URL=postgresql+psycopg2://USER:PASSWORD@HOST:5432/DBNAME
 DATABASE_URL=sqlite:///auth.db
 ```
+
+
 
 ## Security Features
 
